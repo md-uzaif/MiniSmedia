@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>RegisterApp</display-name>
+  <welcome-file-list>
+    <welcome-file>register.html</welcome-file>
+    <welcome-file>login.html</welcome-file>
+    
+  </welcome-file-list>
+  
+  <servlet-mapping>
+  <servlet-name>RegisterData</servlet-name>
+  <url-pattern>/register</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  <servlet-name>RegisterData</servlet-name>
+  <servlet-class>com.tap.servlets.RegisterServlet</servlet-class>
+  </servlet>
+  
+  
+  
+  
+   <servlet-mapping>
+  <servlet-name>SendData</servlet-name>
+  <url-pattern>/sendData</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  <servlet-name>SendData</servlet-name>
+  <servlet-class>com.tap.servlets.checkEmail</servlet-class>
+  </servlet>
+  
+    <servlet-mapping>
+  <servlet-name>Login</servlet-name>
+  <url-pattern>/Login</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  <servlet-name>Login</servlet-name>
+  <servlet-class>com.tap.servlets.Login</servlet-class>
+  </servlet>
+  
+  
+</web-app>
+
+<!-- **NOTES**
+ Servlet Chaining: Instead of directly processing the data, 
+`CheckEmail.java` uses the `RequestDispatcher` object to forward the request to the `RegisterServlet.java` servlet.
+ This is called servlet chaining. -->

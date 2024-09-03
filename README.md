@@ -1,4 +1,4 @@
-<h1>RegisterApp</h1>
+<h1>RegisterApp (how social media is working at registration or login time)</h1>
 This is a Java web application named RegisterApp. The application allows users to register, login, and perform specific actions. Below are the details about the configuration and setup of the application.
 
 Project Structure

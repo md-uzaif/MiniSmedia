@@ -1,7 +1,7 @@
 <h1>RegisterApp (how social media is working at registration or login time)</h1>
 This is a Java web application named RegisterApp. The application allows users to register, login, and perform specific actions. Below are the details about the configuration and setup of the application.
 
-Project Structure
+<h2>Project Structure</h2>
 The application uses servlets to handle different functionalities like registration, login, and sending data.
 
 Configuration
@@ -34,7 +34,6 @@ Servlet Class: com.tap.servlets.Login
 Directory Structure
 The directory structure is expected to follow a standard Java web application layout:
 
-arduino
 Copy code
 RegisterApp/
 │
